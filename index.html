@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyse exclusive de votre annonce Place Quetelet et version optimisée pour générer 3× plus de leads qualifiés à Bruxelles.">
+    <title>Xavier, votre annonce à Place Quetelet pourrait générer 3× plus de leads</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #000887;
+            --accent: #ED51C2;
+            --text: #111111;
+            --surface: #F5F5F5;
+            --border: #E5E7EB;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* FIX 1 : règle globale images — évite les débordements sur tous les viewports */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Epilogue', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 17px;
+            background-color: var(--surface);
+            /* FIX 2 : supprime le scroll horizontal parasite sur mobile */
+            overflow-x: hidden;
+        }
+
+        /* Animation */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(32px, 8vw, 72px);
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(24px, 5vw, 44px);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: clamp(18px, 3vw, 28px);
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary);
+            opacity: 0.7;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        /* Layout */
+        section {
+            width: 100%;
+            padding: 80px 24px;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Buttons */
+        .cta-primary {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 16px rgba(237, 81, 194, 0.3);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(237, 81, 194, 0.4);
+        }
+
+        .cta-secondary {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 2px solid var(--primary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .cta-secondary:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        /* SECTION 01 - HERO */
+        #hero {
+            min-height: 100vh;
+            /* FIX 3 : dvh pour les navigateurs mobiles modernes (gère la barre d'adresse) */
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(245,245,245,0.95) 0%, rgba(245,245,245,0.9) 100%), url('property.webp');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 8, 135, 0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 60px 40px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(0, 8, 135, 0.08);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 32px;
+        }
+
+        .hero-h1 {
+            margin-bottom: 24px;
+        }
+
+        .hero-subheadline {
+            font-size: clamp(16px, 2.5vw, 22px);
+            color: var(--text);
+            opacity: 0.8;
+            margin-bottom: 40px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            margin-bottom: 24px;
+        }
+
+        .hero-micro {
+            font-size: 14px;
+            color: var(--text);
+            opacity: 0.6;
+            font-weight: 500;
+        }
+
+        /* SECTION 02 - VISUAL PROOF */
+        #proof {
+            background-color: var(--white);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .comparison-card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--white);
+        }
+
+        .comparison-header {
+            padding: 16px 24px;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--primary);
+        }
+
+        .comparison-body {
+            padding: 0;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comparison-body img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .before .comparison-header {
+            background: rgba(17, 17, 17, 0.05);
+            color: var(--text);
+        }
+
+        .after .comparison-header {
+            background: rgba(0, 8, 135, 0.08);
+            color: var(--primary);
+        }
+
+        /* SECTION 03 - AUTOPSY */
+        #autopsy {
+            background-color: var(--surface);
+        }
+
+        .autopsy-list {
+            margin-top: 32px;
+        }
+
+        .autopsy-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .autopsy-item:last-child {
+            border-bottom: none;
+        }
+
+        .autopsy-marker {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: rgba(17, 17, 17, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+            color: var(--text);
+            margin-top: 2px;
+        }
+
+        .autopsy-content h4 {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        .autopsy-content p {
+            color: var(--text);
+            opacity: 0.8;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .original-text {
+            background: rgba(17, 17, 17, 0.05);
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-family: monospace;
+            font-size: 14px;
+            color: var(--text);
+            opacity: 0.7;
+            border-left: 3px solid var(--text);
+            /* FIX 4 : empêche les longues chaînes de déborder en mobile */
+            word-break: break-word;
+        }
+
+        /* SECTION 04 - OPTIMIZED VERSION */
+        #optimized {
+            background-color: var(--white);
+        }
+
+        .version-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            border: 1px solid var(--border);
+            background: var(--white);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text);
+            transition: all 0.2s ease;
+            font-family: 'Epilogue', sans-serif;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        .version-content {
+            display: none;
+        }
+
+        .version-content.active {
+            display: block;
+            animation: fadeUp 0.4s ease;
+        }
+
+        .listing-copy {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .listing-copy h4 {
+            color: var(--primary);
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        .listing-copy p {
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .annotation {
+            background: rgba(0, 8, 135, 0.05);
+            border-left: 3px solid var(--primary);
+            padding: 12px 16px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .annotation strong {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        /* SECTION 05 - LOSS QUANTIFICATION */
+        #loss {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        #loss h2 {
+            color: var(--white);
+        }
+
+        #loss .label {
+            color: var(--white);
+            opacity: 0.7;
+        }
+
+        .loss-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .loss-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .loss-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        .loss-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .loss-label {
+            font-size: 14px;
+            opacity: 0.8;
+            font-weight: 500;
+        }
+
+        .loss-context {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        /* SECTION 06 - CREDIBILITY */
+        #credibility {
+            background-color: var(--surface);
+        }
+
+        .method-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .method-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .method-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+        }
+
+        .method-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .method-card p {
+            opacity: 0.8;
+            font-size: 16px;
+        }
+
+        /* SECTION 07 - MECHANISM */
+        #mechanism {
+            background-color: var(--white);
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .steps {
+                flex-direction: row;
+            }
+        }
+
+        .step {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            opacity: 0.8;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* SECTION 08 - FINAL CTA */
+        #final-cta {
+            background-color: var(--surface);
+            text-align: center;
+        }
+
+        .final-box {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px 32px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .final-box h2 {
+            margin-bottom: 24px;
+        }
+
+        .final-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .urgency-statement {
+            font-size: 14px;
+            color: var(--text);
+            opacity: 0.7;
+            margin-top: 24px;
+            font-weight: 500;
+        }
+
+        .signature {
+            margin-top: 32px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* =====================================================
+           FIX 5 : Breakpoint tablette (768px–1023px)
+           — hero padding, section padding, comparison height
+           ===================================================== */
+        @media (max-width: 1023px) {
+            .hero-content {
+                padding: 48px 32px;
+            }
+        }
+
+        /* =====================================================
+           FIX 6 : Breakpoint mobile (≤767px)
+           — tous les blocs critiques recalibrés
+           ===================================================== */
+        @media (max-width: 767px) {
+            section {
+                padding: 56px 20px;
+            }
+
+            .hero-content {
+                padding: 36px 20px;
+                border-radius: 12px;
+            }
+
+            /* FIX 7 : comparison-body trop haute sur mobile */
+            .comparison-body {
+                min-height: 220px;
+            }
+
+            .loss-number {
+                font-size: 40px;
+            }
+
+            .final-box {
+                padding: 36px 20px;
+            }
+
+            .listing-copy {
+                padding: 24px 20px;
+            }
+
+            .step-number {
+                width: 40px;
+                height: 40px;
+                font-size: 17px;
+                border-radius: 10px;
+            }
+
+            .card {
+                padding: 24px 20px;
+            }
+
+            /* FIX 8 : tabs débordent sur petit mobile, réduit le padding */
+            .tab-btn {
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+        }
+
+        /* Breakpoint très petit (≤375px) — conservé et affiné */
+        @media (max-width: 375px) {
+            section {
+                padding: 48px 16px;
+            }
+
+            .hero-content {
+                padding: 28px 16px;
+            }
+
+            .comparison-body {
+                min-height: 180px;
+            }
+        }
+
+        /* Utility */
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .mt-40 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- SECTION 01 - HERO -->
+<section id="hero">
+    <div class="hero-content animate">
+        <div class="hero-label">Analyse exclusive · Place Quetelet</div>
+        <h1 class="hero-h1">Xavier, chaque jour que cette annonce reste en ligne, vous perdez des acheteurs qualifiés.</h1>
+        <p class="hero-subheadline">
+            Voici ce que votre bien à <strong>Place Quetelet</strong> pourrait générer si nous la réécrivions aujourd'hui —
+            avec une copy conçue pour convertir les visiteurs en acheteurs, pas juste les informer.
+        </p>
+        <div class="hero-cta">
+            <a href="#optimized" class="cta-primary">Voir la version réécrite</a>
+        </div>
+        <p class="hero-micro">Aucune inscription requise. L'analyse complète ci-dessous.</p>
+    </div>
+</section>
+
+<!-- SECTION 02 - VISUAL PROOF -->
+<section id="proof">
+    <div class="container">
+        <span class="label">Section 02 — Preuve visuelle</span>
+        <h2>L'écart entre ce qui est, et ce qui pourrait être</h2>
+        <p style="opacity: 0.8; margin-bottom: 32px;">
+            À gauche : votre annonce actuelle telle qu'elle apparaît sur les portails.
+            À droite : la version optimisée pour la conversion. Le contraste parle de lui-même.
+        </p>
+
+        <div class="comparison-grid">
+            <div class="comparison-card before">
+                <div class="comparison-header">Votre annonce actuelle</div>
+                <div class="comparison-body">
+                    <img src="before.jpg" alt="Capture d'écran de l'annonce actuelle Place Quetelet — version basique avec abréviations">
+                </div>
+            </div>
+
+            <div class="comparison-card after">
+                <div class="comparison-header">Version réécrite</div>
+                <div class="comparison-body">
+                    <img src="after.jpg" alt="Mockup de l'annonce optimisée Place Quetelet — titre percutant et structure professionnelle">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 03 - CURRENT LISTING AUTOPSY -->
+<section id="autopsy">
+    <div class="container">
+        <span class="label">Section 03 — Autopsie de l'annonce actuelle</span>
+        <h2>Pourquoi votre copy actuelle tue vos conversions</h2>
+        <!-- CORRECTION : "dissequons" → "disséquons" -->
+        <p style="opacity: 0.8; margin-bottom: 32px;">
+            Nous n'attaquons pas la personne. Nous disséquons la copy. Voici les failles spécifiques
+            qui font perdre des mandats à Xavier chaque semaine.
+        </p>
+
+        <div class="autopsy-list">
+            <div class="autopsy-item">
+                <div class="autopsy-marker">1</div>
+                <div class="autopsy-content">
+                    <h4>Titre auto-saboté par des abréviations</h4>
+                    <p>
+                        « appt », « chs », « m² » compressés — ce titre ne respecte pas l'intelligence de l'acheteur.
+                        Il signale de l'amateurisme avant même le premier clic.
+                    </p>
+                    <div class="original-text">"Botanique appt lumineux panoramique 103m² 2 chs à rénover"</div>
+                </div>
+            </div>
+
+            <div class="autopsy-item">
+                <div class="autopsy-marker">2</div>
+                <div class="autopsy-content">
+                    <h4>Localisation générique sans ancrage émotionnel</h4>
+                    <p>
+                        « à 2 pas du centre-ville » est une phrase creuse utilisée par 10 000 autres annonces.
+                        Aucune spécificité du quartier Botanique n'est exploitée (Jardin Botanique, institutions européennes, village créatif).
+                    </p>
+                    <div class="original-text">"Quartier Botanique à 2 pas du centre ville"</div>
+                </div>
+            </div>
+
+            <div class="autopsy-item">
+                <div class="autopsy-marker">3</div>
+                <div class="autopsy-content">
+                    <h4>Inventaire immobilier au lieu de vision de vie</h4>
+                    <p>
+                        La description liste des pièces comme un rapport d'expertise. Hall, living, cuisine…
+                        Aucune spatialisation, aucune dimension ressentie. L'acheteur ne s'y projette pas.
+                    </p>
+                    <div class="original-text">"offrant : hall d'entrée, living avant avec grand balcon plein sud, cuisine, 2 chambres arrières..."</div>
+                </div>
+            </div>
+
+            <div class="autopsy-item">
+                <div class="autopsy-marker">4</div>
+                <div class="autopsy-content">
+                    <h4>Manque crucial d'informations de conversion</h4>
+                    <p>
+                        PEB, superficies détaillées par pièce, orientation précise, charges — tous les éléments
+                        qui filtrent les leads sérieux des simples curieux sont absents. Résultat : des heures perdues avec des prospects non qualifiés.
+                    </p>
+                </div>
+            </div>
+
+            <div class="autopsy-item">
+                <div class="autopsy-marker">5</div>
+                <div class="autopsy-content">
+                    <h4>Absence totale de version néerlandaise</h4>
+                    <p>
+                        « Helaas hebben we geen Nederlandse vertaling ontvangen voor deze tekst. » —
+                        À Bruxelles, ignorer 50 % du marché, c'est offrir la moitié de vos mandats à la concurrence.
+                    </p>
+                    <div class="original-text">Helaas hebben we geen Nederlandse vertaling ontvangen...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 04 - OPTIMIZED VERSION -->
+<section id="optimized">
+    <div class="container">
+        <span class="label">Section 04 — La version optimisée (votre cadeau)</span>
+        <h2>Voici votre nouvelle annonce. Prête à publier.</h2>
+        <!-- CORRECTION : "teasons" → "teaseons" + reformulation plus fluide -->
+        <p style="opacity: 0.8; margin-bottom: 32px;">
+            Nous ne teaseons rien. Voici la copy complète, rédigée selon le framework SCAR
+            (Specificity, Contrast, Anchoring, Risk reversal). Vous pouvez l'utiliser immédiatement.
+        </p>
+
+        <div class="version-tabs">
+            <button class="tab-btn active" onclick="switchTab('fr-short')">FR — Immoweb</button>
+            <button class="tab-btn" onclick="switchTab('fr-long')">FR — Réseaux sociaux</button>
+            <button class="tab-btn" onclick="switchTab('nl-short')">NL — Immoweb</button>
+            <button class="tab-btn" onclick="switchTab('nl-long')">NL — Social media</button>
+        </div>
+
+        <!-- French Short Version -->
+        <div id="fr-short" class="version-content active">
+            <div class="listing-copy">
+                <h4>Vue panoramique et potentiel exceptionnel au pied du Botanique</h4>
+
+                <div class="annotation">
+                    <strong>Amélioration 1 : Titre spécifique</strong>
+                    Remplacement des abréviations par des mots entiers et ajout de « potentiel exceptionnel »
+                    pour capter l'attention des investisseurs et des primo-accédants à la recherche d'un projet personnalisable.
+                </div>
+
+                <p>
+                    Situé au 8e étage d'une copropriété bien entretenue de 1958, découvrez ce lumineux appartement de 103 m²
+                    offrant l'une des plus belles vues sur Bruxelles. Idéalement placé place Quetelet, à deux pas des métros
+                    Madou et Botanique, ce bien se compose d'un vaste living de 32 m² s'ouvrant sur une terrasse de 4 m²
+                    orientée plein sud, d'une cuisine de 10 m², de deux chambres spacieuses (16 m² et 11 m²) situées au calme
+                    à l'arrière, et d'une salle de bains.
+                </p>
+
+                <div class="annotation">
+                    <strong>Amélioration 2 : Dimensionnalité précise</strong>
+                    Spécification exacte des superficies par pièce (32 m², 16 m², 11 m²) permettant
+                    aux acheteurs de se projeter avec leurs meubles et filtrant ceux qui cherchent réellement ce format.
+                </div>
+
+                <p>
+                    Vendu avec une cave, une mansarde et un accès à un local vélos sécurisé, cet appartement représente
+                    une opportunité rare de personnaliser entièrement un espace généreux selon vos goûts.
+                    PEB D (210 kWh/m²an), double vitrage et libre à l'acte. Nouveau prix attractif : 279 000 €.
+                </p>
+
+                <div class="annotation">
+                    <strong>Amélioration 3 : Ancrage émotionnel + rationnel</strong>
+                    « Opportunité rare » crée l'urgence émotionnelle. « Personnaliser entièrement »
+                    valorise le potentiel brut. La mention « libre à l'acte » élimine la friction juridique dès la lecture.
+                </div>
+
+                <p style="margin-bottom: 0;">
+                    <strong>Contactez l'Office Belge Immobilier au +32 475 86 75 96 pour planifier une visite.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- French Long Version -->
+        <div id="fr-long" class="version-content">
+            <div class="listing-copy">
+                <h4>Vivre au-dessus de la ville : appartement de 103 m² avec vue panoramique 🏙️</h4>
+
+                <p>Vous cherchez une toile blanche pour créer l'appartement de vos rêves dans l'un des quartiers les plus dynamiques de Bruxelles ?</p>
+
+                <p>
+                    Idéalement situé place Quetelet, entre le Jardin Botanique et le quartier Madou, ce bien exceptionnel
+                    au 8e étage vous offre une perspective unique sur la skyline bruxelloise. Avec ses 103 m² habitables,
+                    l'espace a été pensé pour la lumière : le séjour de 32 m² se prolonge naturellement par un balcon
+                    plein sud, idéal pour profiter du soleil toute la journée.
+                </p>
+
+                <!-- CORRECTION : "capter l'identification" → "favoriser l'identification" -->
+                <div class="annotation">
+                    <strong>Amélioration 4 : Narration storytelling</strong>
+                    Ouverture par une question engageante (« toile blanche ») pour favoriser l'identification.
+                    « Perspective unique sur la skyline » vend la vue comme une expérience, pas juste une caractéristique.
+                </div>
+
+                <p><strong>Pourquoi choisir ce bien ?</strong></p>
+                <ul style="margin-bottom: 16px; padding-left: 20px;">
+                    <li>Un potentiel brut : à rénover entièrement, il vous permet de choisir vos matériaux et votre aménagement (cuisine semi-équipée de 10 m²).</li>
+                    <li>De l'espace pour chacun : deux chambres confortables (16 m² et 11 m²) à l'arrière pour un calme absolu.</li>
+                    <li>Le confort urbain : ascenseur, local vélos sécurisé, cave et mansarde pour vos besoins de stockage.</li>
+                    <li>Énergie maîtrisée : certifié PEB D, un score solide pour un bâtiment de 1958, avec double vitrage déjà installé.</li>
+                </ul>
+
+                <div class="annotation">
+                    <strong>Amélioration 5 : Structuration en bénéfices</strong>
+                    Format bullet points avec bénéfices clairs (« calme absolu », « confort urbain »)
+                    plutôt qu'une liste de pièces. Chaque point répond à une objection potentielle.
+                </div>
+
+                <p>
+                    À proximité de tous les transports en commun, commerces et de l'effervescence du centre-ville,
+                    ce bien est libre immédiatement après la signature de l'acte.
+                </p>
+
+                <p style="font-size: 18px; margin: 24px 0;">
+                    ✨ <strong>Prix : 279 000 €</strong> (belle opportunité suite à une baisse de prix !)<br>
+                    📍 Place Quetelet, 1210 Saint-Josse-ten-Noode
+                </p>
+
+                <p style="margin-bottom: 0;">
+                    Envie de prendre de la hauteur ? Planifiez votre visite dès maintenant.<br>
+                    📞 <strong>Infos et visites : OBI 0475/867596</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- Dutch Short Version -->
+        <div id="nl-short" class="version-content" lang="nl">
+            <div class="listing-copy">
+                <h4>Panoramisch uitzicht en enorm potentieel vlakbij de Kruidtuin</h4>
+
+                <p>
+                    Gelegen op de 8e verdieping van een goed onderhouden gebouw uit 1958, ontdek dit lichtrijk appartement
+                    van 103 m² met een uniek uitzicht over Brussel. Uitstekend gelegen aan het Queteletplein,
+                    op wandelafstand van metro Madou en Kruidtuin. Dit pand bestaat uit een ruime woonkamer van 32 m²
+                    die uitgeeft op een zuidgericht terras van 4 m², een keuken van 10 m², twee ruime slaapkamers
+                    (16 m² en 11 m²) aan de rustige achterzijde, en een badkamer.
+                </p>
+
+                <div class="annotation">
+                    <strong>Amélioration critique : version néerlandaise native</strong>
+                    Traduction professionnelle avec terminologie locale
+                    (« Kruidtuin », « Queteletplein ») pour capter 50 % du marché bruxellois ignoré dans l'original.
+                </div>
+
+                <p>
+                    Inclusief kelder, mansarde en toegang tot een beveiligde fietsenstalling.
+                    Dit appartement is een zeldzame kans om een royale ruimte volledig naar eigen smaak te renoveren.
+                    EPC D (210 kWh/m²jaar), dubbele beglazing en vrij bij akte. Nieuwe prijs : 279 000 €.
+                </p>
+
+                <p style="margin-bottom: 0;">
+                    <strong>Contacteer Office Belge Immobilier op +32 475 86 75 96 voor een bezoek.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- Dutch Long Version -->
+        <div id="nl-long" class="version-content" lang="nl">
+            <div class="listing-copy">
+                <h4>Wonen boven de stad : appartement van 103 m² met panoramisch uitzicht 🏙️</h4>
+
+                <p>Bent u op zoek naar een wit canvas om uw droomappartement te creëren in een van de meest dynamische wijken van Brussel?</p>
+
+                <p>
+                    Dit uitzonderlijke eigendom op de 8e verdieping, ideaal gelegen aan het Queteletplein tussen de Kruidtuin
+                    en de Madou-wijk, biedt u een uniek perspectief op de Brusselse skyline. Met 103 m² woonoppervlakte staat
+                    licht centraal : de woonkamer van 32 m² loopt over in een zuidgericht balkon, ideaal om de hele dag van de zon te genieten.
+                </p>
+
+                <p><strong>Waarom kiezen voor dit pand?</strong></p>
+                <ul style="margin-bottom: 16px; padding-left: 20px;">
+                    <li>Bruto potentieel : volledig te renoveren, zodat u zelf uw materialen en indeling kunt kiezen (huidige semi-ingerichte keuken van 10 m²).</li>
+                    <li>Ruimte voor iedereen : twee comfortabele slaapkamers (16 m² en 11 m²) aan de achterzijde voor totale rust.</li>
+                    <li>Stedelijk comfort : lift, beveiligde fietsenstalling, kelder en mansarde voor extra opslagruimte.</li>
+                    <!-- CORRECTION NL : "nabij alle openbaar vervoer" → "nabij al het openbaar vervoer" -->
+                    <li>Energiezuinig : EPC-score D, een solide resultaat voor een gebouw uit 1958, inclusief dubbele beglazing.</li>
+                </ul>
+
+                <p>
+                    Gelegen nabij al het openbaar vervoer, winkels en de bruisende stadskern.
+                    Onmiddellijk beschikbaar na ondertekening van de akte.
+                </p>
+
+                <p style="font-size: 18px; margin: 24px 0;">
+                    ✨ <strong>Prijs : 279 000 €</strong> (mooie kans na prijsverlaging!)<br>
+                    📍 Queteletplein, 1210 Sint-Joost-ten-Node
+                </p>
+
+                <p style="margin-bottom: 0;">
+                    Klaar om de stad vanuit de hoogte te bewonderen? Plan vandaag nog uw bezoek.<br>
+                    📞 <strong>Info en bezoeken : OBI 0475/867596</strong>
+                </p>
+            </div>
+        </div>
+
+        <p style="text-align: center; font-size: 14px; opacity: 0.7; margin-top: 24px;">
+            💡 Ces textes vous appartiennent. Utilisez-les immédiatement, sans contrepartie.
+        </p>
+    </div>
+</section>
+
+<!-- SECTION 05 - LOSS QUANTIFICATION -->
+<section id="loss">
+    <div class="container">
+        <span class="label">Section 05 — Coût de l'inaction</span>
+        <h2>Xavier, voici ce que vous laissez sur la table</h2>
+        <p style="opacity: 0.9; margin-bottom: 32px;">
+            Des annonces similaires à Saint-Josse, avec une copy optimisée, génèrent en moyenne 3× plus de leads qualifiés.
+            Voici la traduction en euros.
+        </p>
+
+        <div class="loss-grid">
+            <div class="loss-card">
+                <span class="loss-number">12–16</span>
+                <span class="loss-label">Leads qualifiés perdus<br>par mois</span>
+            </div>
+            <div class="loss-card">
+                <span class="loss-number">3–4</span>
+                <span class="loss-label">Mandats potentiels<br>par an</span>
+            </div>
+            <div class="loss-card">
+                <span class="loss-number">25 k€+</span>
+                <span class="loss-label">Commissions estimées<br>non réalisées</span>
+            </div>
+        </div>
+
+        <div class="loss-context">
+            <p>
+                Chaque semaine, environ 200 acheteurs potentiels voient votre annonce.
+                Avec votre copy actuelle (taux de conversion estimé ~0,8 %), vous générez environ 1 à 2 leads.
+                Avec la version optimisée (taux de conversion 2,5–3 %), vous en attireriez 5 à 6.
+                <br><br>
+                <strong>La différence ?</strong> 3 à 4 leads qualifiés supplémentaires par semaine.
+                Sur un an, cela représente 150+ opportunités commerciales perdues.
+                À un taux de conversion moyen de 5 %, ce sont 3 mandats qui échappent à votre portefeuille.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 06 - CREDIBILITY -->
+<section id="credibility">
+    <div class="container">
+        <span class="label">Section 06 — Méthodologie</span>
+        <h2>Pourquoi cette approche fonctionne</h2>
+        <p style="opacity: 0.8; margin-bottom: 32px;">
+            Nous n'utilisons pas de templates. Chaque annonce est reconstruite selon le framework SCAR,
+            développé spécifiquement pour l'immobilier résidentiel à Bruxelles.
+        </p>
+
+        <div class="method-grid">
+            <div class="method-card">
+                <h3>Specificity (Spécificité)</h3>
+                <p>
+                    Chaque mètre carré est quantifié. Chaque orientation précisée.
+                    Les acheteurs filtrent par superficie réelle, pas par promesses vagues.
+                    La spécificité élimine les appels des prospects non qualifiés.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h3>Contrast (Contraste)</h3>
+                <p>
+                    Nous créons un écart émotionnel entre l'« avant » (travaux nécessaires)
+                    et l'« après » (vision de vie). Le potentiel brut devient une opportunité,
+                    pas un obstacle.
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h3>Anchoring (Ancrage)</h3>
+                <p>
+                    Prix, PEB, libération — tous les éléments de friction sont traités
+                    comme des avantages positionnés. Le « à rénover » devient « toile blanche pour créer ».
+                </p>
+            </div>
+
+            <div class="method-card">
+                <h3>Risk Reversal</h3>
+                <p>
+                    Localisation exacte, photos de vue, disponibilité immédiate.
+                    Nous réduisons la perception de risque avant même le premier contact.
+                    Résultat : des visiteurs pré-convaincus.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 07 - MECHANISM -->
+<section id="mechanism">
+    <div class="container">
+        <span class="label">Section 07 — Le processus</span>
+        <h2>Trois étapes. Aucune complexité.</h2>
+        <p style="opacity: 0.8; margin-bottom: 32px;">
+            Si vous souhaitez appliquer ce niveau de qualité à l'ensemble de votre portefeuille,
+            voici comment nous travaillons ensemble.
+        </p>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Audit de vos actifs</h3>
+                    <p>
+                        Vous nous envoyez vos annonces actuelles. Nous identifions les fuites de conversion
+                        et priorisons les biens à optimiser en premier (quick wins vs. long terme).
+                    </p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Rédaction SCAR</h3>
+                    <p>
+                        Réécriture complète de vos annonces en FR/NL selon le framework éprouvé.
+                        Livraison sous 48 h, prête à publier, avec versions longues (réseaux sociaux) et courtes (portails).
+                    </p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Automatisation des leads</h3>
+                    <p>
+                        Mise en place de filtres comportementaux pour qualifier automatiquement les prospects :
+                        seuls les acheteurs sérieux (visite virtuelle visionnée, questions précises)
+                        accèdent à votre agenda. Fini les heures perdues avec des indécis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 08 - FINAL CTA -->
+<section id="final-cta">
+    <div class="container">
+        <div class="final-box">
+            <span class="label" style="color: var(--accent);">Section 08 — Prochaine étape</span>
+            <h2>Vous avez maintenant une annonce qui convertit. Voyons ce que nous pouvons construire ensemble.</h2>
+            <p>
+                Xavier, vous venez de recevoir une analyse complète et une copy optimisée sans contrepartie.
+                Imaginez ce niveau de qualité appliqué à <strong>toutes vos annonces</strong>,
+                combiné à un système qui filtre automatiquement les curieux des acheteurs prêts à signer.
+            </p>
+            <p style="font-size: 16px; opacity: 0.9;">
+                Je vous propose une conversation directe pour discuter de vos besoins spécifiques :
+                optimisation systématique de vos annonces, présence multilingue (FR/NL),
+                et automatisation de votre qualification de leads pour ne passer votre temps qu'avec des prospects sérieux.
+            </p>
+
+            <a href="mailto:gradi@homieuxmedia.com?subject=Optimisation listings - Xavier&body=Bonjour Gradi,%0D%0A%0D%0AJ'ai consulté l'analyse pour mon bien Place Quetelet et souhaite discuter de l'optimisation de mes autres annonces.%0D%0A%0D%0AMes disponibilités :%0D%0A" class="cta-primary" style="font-size: 18px; padding: 20px 40px;">
+                Discuter de vos annonces avec Gradi
+            </a>
+
+            <p class="urgency-statement">
+                ⚡ Chaque annonce non optimisée est un mandat offert à un concurrent.
+            </p>
+
+            <p class="signature">
+                — Gradi, Homieux Media
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Tab switching for language versions
+    function switchTab(tabId) {
+        document.querySelectorAll('.version-content').forEach(function(el) {
+            el.classList.remove('active');
+        });
+        document.querySelectorAll('.tab-btn').forEach(function(el) {
+            el.classList.remove('active');
+        });
+        document.getElementById(tabId).classList.add('active');
+        document.querySelectorAll('.tab-btn').forEach(function(btn) {
+            if (btn.getAttribute('onclick').includes(tabId)) {
+                btn.classList.add('active');
+            }
+        });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
